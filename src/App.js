@@ -1,9 +1,9 @@
-import App from './adding-interactivity/sample.js';
+import MyApp from './responding-to-events/sample.js';
 
-export default function RootApp() {
+export default function App() {
   return (
     <div className='App'>
-      <App />
+      <MyApp />
     </div>
   );
 }
