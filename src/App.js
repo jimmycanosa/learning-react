@@ -1,4 +1,4 @@
-import MyApp from './adding-interactivity/state-a-components-memory/when-a-regular-variable-isnt-enough.js';
+import MyApp from './adding-interactivity/state-a-components-memory/complete-the-gallery.js';
 
 export default function App() {
   return (
