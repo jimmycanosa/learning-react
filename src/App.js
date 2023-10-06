@@ -1,4 +1,4 @@
-import MyApp from './responding-to-events/wire-up-the-events.js';
+import MyApp from './adding-interactivity/state-a-components-memory/app.js';
 
 export default function App() {
   return (
