@@ -1,4 +1,4 @@
-import MyApp from './adding-interactivity/state-a-components-memory/complete-the-gallery.js';
+import MyApp from './adding-interactivity/state-a-components-memory/fix-stuck-form-inputs.js';
 
 export default function App() {
   return (
