@@ -1,4 +1,4 @@
-import MyApp from './responding-to-events/event-propagation.js';
+import MyApp from './responding-to-events/stopping-propagation.js';
 
 export default function App() {
   return (
