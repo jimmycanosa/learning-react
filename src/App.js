@@ -1,4 +1,4 @@
-import MyApp from './adding-interactivity/state-a-components-memory/remove-unnecessary-state.js';
+import MyApp from './adding-interactivity/state-as-a-snapshot/state-over-time.js';
 
 export default function App() {
   return (
