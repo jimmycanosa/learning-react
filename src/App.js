@@ -1,4 +1,4 @@
-import MyApp from './responding-to-events/passing-event-handlers-as-props.js';
+import MyApp from './responding-to-events/naming-event-handler-props.js';
 
 export default function App() {
   return (
