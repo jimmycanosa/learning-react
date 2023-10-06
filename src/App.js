@@ -1,4 +1,4 @@
-import MyApp from './adding-interactivity/state-a-components-memory/fix-a-crash.js';
+import MyApp from './adding-interactivity/state-a-components-memory/remove-unnecessary-state.js';
 
 export default function App() {
   return (
