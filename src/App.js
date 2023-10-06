@@ -1,4 +1,4 @@
-import MyApp from './adding-interactivity/state-as-a-snapshot/implement-a-traffic-light.js';
+import MyApp from './adding-interactivity/queueing-a-series-of-states-updates/react-batches-states-updates.js';
 
 export default function App() {
   return (
