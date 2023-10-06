@@ -46,14 +46,6 @@ ul {
   padding-inline-start: 20px;
 }
 
-label {
-  display: block;
-}
-input {
-  margin-left: 5px;
-  margin-bottom: 5px;
-}
-img {
-  width: 200px;
-  height: 200px;
+button {
+  margin-right: 10px;
 }
