@@ -1,4 +1,4 @@
-import MyApp from './adding-interactivity/queueing-a-series-of-states-updates/react-batches-states-updates.js';
+import MyApp from './adding-interactivity/queueing-a-series-of-states-updates/fix-a-request-counter.js';
 
 export default function App() {
   return (
