@@ -1,7 +1,9 @@
 export function getFinalState(baseState, queue) {
   let finalState = baseState;
 
-  // TODO: do something with the queue
+  queue.map((q) =>
+    typeof q === 'function' ? (finalState = q(finalState)) : (finalState = q)
+  );
 
   return finalState;
 }
