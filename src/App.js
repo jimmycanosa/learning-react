@@ -1,4 +1,4 @@
-import MyApp from './adding-interactivity/queueing-a-series-of-states-updates/copying-objects-with-the-spread-syntax.js';
+import MyApp from './adding-interactivity/queueing-a-series-of-states-updates/updating-nested-object.js';
 
 export default function App() {
   return (
