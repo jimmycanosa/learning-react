@@ -22,7 +22,11 @@ export default function ShoppingCart() {
   const [products, setProducts] = useState(initialProducts);
 
   function handleIncreaseClick(productsId) {
-    // TODO
+    setProducts(
+      products.map((e) =>
+        e.id === productsId ? { ...e, count: e.count + 1 } : e
+      )
+    );
   }
 
   return (
