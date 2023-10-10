@@ -1,4 +1,4 @@
-import MyApp from './adding-interactivity/queueing-a-series-of-states-updates/implement-the-state-queue-yourself.js';
+import MyApp from './adding-interactivity/queueing-a-series-of-states-updates/treat-state-as-read-only.js';
 
 export default function App() {
   return (
