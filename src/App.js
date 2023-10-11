@@ -1,4 +1,4 @@
-import MyApp from './managing-state/sample.js';
+import MyApp from './managing-state/reacting-to-input-with-state/example.js';
 
 export default function App() {
   return (

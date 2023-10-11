@@ -46,14 +46,16 @@ ul {
   padding-inline-start: 20px;
 }
 
-button {
-  margin: 5px;
+section {
+  border-bottom: 1px solid #aaa;
+  padding: 20px;
 }
-li {
-  list-style-type: none;
+h4 {
+  color: #222;
 }
-ul,
-li {
+body {
   margin: 0;
-  padding: 0;
+}
+.Error {
+  color: red;
 }
