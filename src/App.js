@@ -1,4 +1,4 @@
-import MyApp from './adding-interactivity/updating-arrays-in-state/sample.js';
+import MyApp from './managing-state/sample.js';
 
 export default function App() {
   return (
