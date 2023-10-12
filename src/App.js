@@ -1,4 +1,4 @@
-import MyApp from './managing-state/reacting-to-input-with-state/challenge.js';
+import MyApp from './managing-state/choosing-the-state-structure/example.js';
 
 export default function App() {
   return (
