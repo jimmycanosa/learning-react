@@ -6,7 +6,12 @@ export default function EditProfile() {
   const [lastName, setLastName] = useState('Jacobs');
 
   return (
-    <form>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        setEnableEdit(!enableEdit);
+      }}
+    >
       <label>
         First name:{' '}
         {enableEdit ? (
@@ -29,9 +34,7 @@ export default function EditProfile() {
           <b>{lastName}</b>
         )}
       </label>
-      <button type='button' onClick={() => setEnableEdit(!enableEdit)}>
-        {enableEdit ? 'Save' : 'Edit'} Profile
-      </button>
+      <button type='submit'>{enableEdit ? 'Save' : 'Edit'} Profile</button>
       <p>
         <i>
           Hello, {firstName} {lastName}!
