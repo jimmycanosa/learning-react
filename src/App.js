@@ -1,4 +1,4 @@
-import MyApp from './managing-state/choosing-the-state-structure/example.js';
+import MyApp from './managing-state/choosing-the-state-structure/avoid-deeply-nested-state.js';
 
 export default function App() {
   return (
