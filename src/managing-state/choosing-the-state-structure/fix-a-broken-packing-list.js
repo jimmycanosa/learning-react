@@ -11,20 +11,14 @@ const initialItems = [
 
 export default function TravelPlan() {
   const [items, setItems] = useState(initialItems);
-  const [total, setTotal] = useState(3);
-  const [packed, setPacked] = useState(1);
+  const total = items.length;
+  const packed = items.filter((item) => item.packed === true).length;
 
   function handleAddItem(title) {
-    setTotal(total + 1);
     setItems([...items, { id: nextId++, title: title, packed: false }]);
   }
 
   function handleChangeItem(nextItem) {
-    if (nextItem.packed) {
-      setPacked(packed + 1);
-    } else {
-      setPacked(packed - 1);
-    }
     setItems(
       items.map((item) => {
         if (item.id === nextItem.id) {
@@ -37,7 +31,6 @@ export default function TravelPlan() {
   }
 
   function handleDeleteItem(itemId) {
-    setTotal(total - 1);
     setItems(items.filter((item) => item.id !== itemId));
   }
 
