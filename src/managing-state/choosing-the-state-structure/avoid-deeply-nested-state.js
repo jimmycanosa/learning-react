@@ -1,22 +1,22 @@
-import { useState } from 'react';
+import { useImmer } from 'use-immer';
 import { initialTravelPlan } from './places.js';
 
 export default function TravelPlan() {
-  const [plan, setPlan] = useState(initialTravelPlan);
+  const [plan, updatePlan] = useImmer(initialTravelPlan);
 
   function handleComplete(parentId, childId) {
-    const parent = plan[parentId];
-    // Create a new version of the parent place
-    // that doesn't include this child ID.
-    const nextParent = {
-      ...parent,
-      childIds: parent.childIds.filter((id) => id !== childId),
-    };
-    // Update the root state object...
-    setPlan({
-      ...plan,
-      // ...so that it has the updated parent.
-      [parentId]: nextParent,
+    updatePlan((draft) => {
+      // Remove from the parent place's child IDs.
+      const parent = draft[parentId];
+      parent.childIds = parent.childIds.filter((id) => id !== childId);
+
+      // Forget this place and all its subtree.
+      deleteAllChildren(childId);
+      function deleteAllChildren(id) {
+        const place = draft[id];
+        place.childIds.forEach(deleteAllChildren);
+        delete draft[id];
+      }
     });
   }
 
