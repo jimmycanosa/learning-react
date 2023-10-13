@@ -1,4 +1,4 @@
-import MyApp from './managing-state/choosing-the-state-structure/avoid-deeply-nested-state.js';
+import MyApp from './managing-state/choosing-the-state-structure/fix-a-component-thats-not-updating.js'
 
 export default function App() {
   return (
