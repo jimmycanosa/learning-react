@@ -2,19 +2,15 @@ import { useState } from 'react';
 
 export default function App() {
   const [showHint, setShowHint] = useState(false);
-  const [text, setText] = useState('');
-
-  function handleChange(e) {
-    setText(e.target.value)
-  }
-  
-  if (showHint) {
-    return (
-      <div>
+  return (
+    <div>
+      {showHint && (
         <p>
           <i>Hint: Your favorite city?</i>
         </p>
-        <Form value={text} onChange={handleChange} />
+      )}
+      <Form />
+      {showHint ? (
         <button
           onClick={() => {
             setShowHint(false);
@@ -22,23 +18,20 @@ export default function App() {
         >
           Hide hint
         </button>
-      </div>
-    );
-  }
-  return (
-    <div>
-      <Form value={text} onChange={handleChange} />
-      <button
-        onClick={() => {
-          setShowHint(true);
-        }}
-      >
-        Show hint
-      </button>
+      ) : (
+        <button
+          onClick={() => {
+            setShowHint(true);
+          }}
+        >
+          Show hint
+        </button>
+      )}
     </div>
   );
 }
 
-function Form({value, onChange}) {
-  return <textarea value={value} onChange={onChange} />;
+function Form() {
+  const [text, setText] = useState('');
+  return <textarea value={text} onChange={(e) => setText(e.target.value)} />;
 }
