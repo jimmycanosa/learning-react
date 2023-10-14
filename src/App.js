@@ -1,4 +1,4 @@
-import MyApp from './managing-state/preserving-and-resetting-state/same-component-at-the-same-position-preserves-state.js';
+import MyApp from './managing-state/preserving-and-resetting-state/different-components-at-the-same-position-preserves-state.js';
 
 export default function App() {
   return (
