@@ -1,4 +1,4 @@
-import MyApp from './managing-state/choosing-the-state-structure/implement-multiple-selection.js'
+import MyApp from './managing-state/sharing-state-between-components/lifting-state-up-by-example.js';
 
 export default function App() {
   return (
