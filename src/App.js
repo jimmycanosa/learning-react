@@ -1,4 +1,4 @@
-import MyApp from './managing-state/preserving-and-resetting-state/state-is-tied-to-a-position-in-the-tree.js';
+import MyApp from './managing-state/preserving-and-resetting-state/same-component-at-the-same-position-preserves-state.js';
 
 export default function App() {
   return (
