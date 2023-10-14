@@ -1,4 +1,4 @@
-import MyApp from './managing-state/preserving-and-resetting-state/reset-a-detail-form.js';
+import MyApp from './managing-state/preserving-and-resetting-state/fix-misplaced-state-in-the-list.js';
 
 export default function App() {
   return (
