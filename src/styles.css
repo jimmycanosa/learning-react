@@ -46,11 +46,9 @@ ul {
   padding-inline-start: 20px;
 }
 
-h3,
-p {
-  margin: 5px 0px;
+input {
+  margin: 5px;
 }
-.panel {
-  padding: 10px;
-  border: 1px solid #aaa;
+label {
+  display: block;
 }

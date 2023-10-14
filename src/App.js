@@ -1,4 +1,4 @@
-import MyApp from './managing-state/sharing-state-between-components/lifting-state-up-by-example.js';
+import MyApp from './managing-state/sharing-state-between-components/synced-inputs.js';
 
 export default function App() {
   return (
