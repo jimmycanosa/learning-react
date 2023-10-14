@@ -1,4 +1,4 @@
-import MyApp from './managing-state/preserving-and-resetting-state/resetting-state-at-the-same-position.js';
+import MyApp from './managing-state/preserving-and-resetting-state/resetting-a-form-with-a-key.js';
 
 export default function App() {
   return (
