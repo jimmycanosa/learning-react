@@ -2,13 +2,19 @@ import { useState } from 'react';
 
 export default function App() {
   const [showHint, setShowHint] = useState(false);
+  const [text, setText] = useState('');
+
+  function handleChange(e) {
+    setText(e.target.value)
+  }
+  
   if (showHint) {
     return (
       <div>
         <p>
           <i>Hint: Your favorite city?</i>
         </p>
-        <Form />
+        <Form value={text} onChange={handleChange} />
         <button
           onClick={() => {
             setShowHint(false);
@@ -21,7 +27,7 @@ export default function App() {
   }
   return (
     <div>
-      <Form />
+      <Form value={text} onChange={handleChange} />
       <button
         onClick={() => {
           setShowHint(true);
@@ -33,7 +39,6 @@ export default function App() {
   );
 }
 
-function Form() {
-  const [text, setText] = useState('');
-  return <textarea value={text} onChange={(e) => setText(e.target.value)} />;
+function Form({value, onChange}) {
+  return <textarea value={value} onChange={onChange} />;
 }

@@ -1,4 +1,4 @@
-import MyApp from './managing-state/preserving-and-resetting-state/resetting-a-form-with-a-key.js';
+import MyApp from './managing-state/preserving-and-resetting-state/fix-disappearing-input-text.js';
 
 export default function App() {
   return (
