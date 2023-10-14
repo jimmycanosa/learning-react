@@ -3,16 +3,19 @@ import { letters } from './data.js';
 import Letter from './Letter.js';
 
 export default function MailClient() {
-  const [selectedIds, setSelectedIds] = useState([]);
+  const [selectedIds, setSelectedIds] = useState(new Set());
 
-  const selectedCount = selectedIds.length;
+  const selectedCount = selectedIds.size;
 
   function handleToggle(toggledId) {
-    if (selectedIds.includes(toggledId)) {
-      setSelectedIds(selectedIds.filter(id => id !== toggledId))
+    // Create a copy (to avoid mutation).
+    const nextIds = new Set(selectedIds);
+    if (nextIds.has(toggledId)) {
+      nextIds.delete(toggledId);
     } else {
-      setSelectedIds([...selectedIds, toggledId])
+      nextIds.add(toggledId);
     }
+    setSelectedIds(nextIds);
   }
 
   return (
@@ -23,9 +26,7 @@ export default function MailClient() {
           <Letter
             key={letter.id}
             letter={letter}
-            isSelected={
-              selectedIds.includes(letter.id)
-            }
+            isSelected={selectedIds.has(letter.id)}
             onToggle={handleToggle}
           />
         ))}
