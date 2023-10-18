@@ -1,4 +1,4 @@
-import MyApp from './managing-state/passing-data-deeply-with-context/replace-prop-drilling-with-context.js'
+import MyApp from './managing-state/scaling-up-with-reducer-and-context/combining-a-reducer-with-context.js';
 
 export default function App() {
   return (
