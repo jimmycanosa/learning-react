@@ -1,4 +1,4 @@
-import { useReducer } from 'react';
+import { useReducer } from './MyReact.js';
 import Chat from './Chat.js';
 import ContactList from './ContactList.js';
 import { initialState, messengerReducer } from './messengerReducer';
