@@ -1,4 +1,4 @@
-import MyApp from './managing-state/passing-data-deeply-with-context/context-an-alternative-to-passing-props.js'
+import MyApp from './managing-state/passing-data-deeply-with-context/context-passes-through-intermediate-components.js'
 
 export default function App() {
   return (
