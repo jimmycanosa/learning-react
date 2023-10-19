@@ -46,10 +46,7 @@ ul {
   padding-inline-start: 20px;
 }
 
-button {
+input {
   display: block;
   margin-bottom: 20px;
-}
-video {
-  width: 250px;
 }
