@@ -1,4 +1,4 @@
-import MyApp from './escape-hatches/reusing-logic-with-custom-hooks.js';
+import MyApp from './escape-hatches/referencing-values-with-refs/adding-a-ref-to-your-component.js';
 
 export default function App() {
   return (
