@@ -1,12 +1,11 @@
-import { useRef } from 'react';
+import { useState } from 'react';
 
 export default function Counter() {
-  let ref = useRef(0);
+  const [count, setCount] = useState(0);
 
   function handleClick() {
-    ref.current = ref.current + 1;
-    alert('You clicked ' + ref.current + ' times!');
+    setCount(count + 1);
   }
 
-  return <button onClick={handleClick}>Click me!</button>;
+  return <button onClick={handleClick}>You clicked {count} times</button>;
 }
