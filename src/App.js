@@ -1,4 +1,4 @@
-import MyApp from './escape-hatches/synchronizing-with-effects/how-to-write-an-effect.js';
+import MyApp from './escape-hatches/synchronizing-with-effects/add-cleanup-if-needed.js';
 
 export default function App() {
   return (
