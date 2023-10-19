@@ -1,18 +1,23 @@
 import { useState, useEffect } from 'react';
+import { experimental_useEffectEvent as useEffectEvent } from 'react';
 import { createConnection } from './chat.js';
 import { showNotification } from './notifications.js';
 
 const serverUrl = 'https://localhost:1234';
 
 function ChatRoom({ roomId, theme }) {
+  const onConnected = useEffectEvent(() => {
+    showNotification('Connected!', theme);
+  });
+
   useEffect(() => {
     const connection = createConnection(serverUrl, roomId);
     connection.on('connected', () => {
-      showNotification('Connected!', theme);
+      onConnected();
     });
     connection.connect();
     return () => connection.disconnect();
-  }, [roomId, theme]);
+  }, [roomId]);
 
   return <h1>Welcome to the {roomId} room!</h1>;
 }
