@@ -1,4 +1,4 @@
-import MyApp from './managing-state/scaling-up-with-reducer-and-context/combining-a-reducer-with-context.js';
+import MyApp from './escape-hatches/referencing-values-with-refs.js';
 
 export default function App() {
   return (
