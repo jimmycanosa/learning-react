@@ -1,4 +1,4 @@
-import MyApp from './escape-hatches/lifecycle-of-reactive-effects.js';
+import MyApp from './escape-hatches/removing-effect-dependencies.js';
 
 export default function App() {
   return (
