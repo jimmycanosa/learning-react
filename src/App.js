@@ -1,4 +1,4 @@
-import MyApp from './escape-hatches/referencing-values-with-refs/adding-a-ref-to-your-component.js';
+import MyApp from './escape-hatches/referencing-values-with-refs/fix-a-broken-chat-input.js';
 
 export default function App() {
   return (
