@@ -6,16 +6,15 @@ const serverUrl = 'https://localhost:1234';
 function ChatRoom({ roomId }) {
   const [message, setMessage] = useState('');
 
-  const options = {
-    serverUrl: serverUrl,
-    roomId: roomId,
-  };
-
   useEffect(() => {
+    const options = {
+      serverUrl: serverUrl,
+      roomId: roomId,
+    };
     const connection = createConnection(options);
     connection.connect();
     return () => connection.disconnect();
-  }, [options]);
+  }, [roomId]);
 
   return (
     <>
