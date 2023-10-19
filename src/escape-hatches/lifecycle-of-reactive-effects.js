@@ -1,20 +1,25 @@
 import { useState, useEffect } from 'react';
 import { createConnection } from './chat.js';
+import { showNotification } from './notifications.js';
 
 const serverUrl = 'https://localhost:1234';
 
-function ChatRoom({ roomId }) {
+function ChatRoom({ roomId, theme }) {
   useEffect(() => {
     const connection = createConnection(serverUrl, roomId);
+    connection.on('connected', () => {
+      showNotification('Connected!', theme);
+    });
     connection.connect();
     return () => connection.disconnect();
-  }, [roomId]);
+  }, [roomId, theme]);
 
   return <h1>Welcome to the {roomId} room!</h1>;
 }
 
 export default function App() {
   const [roomId, setRoomId] = useState('general');
+  const [isDark, setIsDark] = useState(false);
   return (
     <>
       <label>
@@ -25,8 +30,16 @@ export default function App() {
           <option value='music'>music</option>
         </select>
       </label>
+      <label>
+        <input
+          type='checkbox'
+          checked={isDark}
+          onChange={(e) => setIsDark(e.target.checked)}
+        />
+        Use dark theme
+      </label>
       <hr />
-      <ChatRoom roomId={roomId} />
+      <ChatRoom roomId={roomId} theme={isDark ? 'dark' : 'light'} />
     </>
   );
 }
