@@ -1,4 +1,4 @@
-import MyApp from './escape-hatches/manipulating-the-dom-with-refs.js';
+import MyApp from './escape-hatches/synchronizing-with-effects.js';
 
 export default function App() {
   return (
