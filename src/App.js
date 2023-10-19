@@ -1,4 +1,4 @@
-import MyApp from './escape-hatches/removing-effect-dependencies.js';
+import MyApp from './escape-hatches/reusing-logic-with-custom-hooks.js';
 
 export default function App() {
   return (
