@@ -1,4 +1,4 @@
-import MyApp from './escape-hatches/synchronizing-with-effects-chat-app.js';
+import MyApp from './escape-hatches/lifecycle-of-reactive-effects.js';
 
 export default function App() {
   return (
