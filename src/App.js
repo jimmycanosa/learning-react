@@ -1,4 +1,4 @@
-import MyApp from './escape-hatches/referencing-values-with-refs/adding-a-ref-to-your-component.js';
+import MyApp from './escape-hatches/referencing-values-with-refs/building-a-stopwatch.js';
 
 export default function App() {
   return (
