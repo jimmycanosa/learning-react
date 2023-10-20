@@ -45,12 +45,3 @@ code {
 ul {
   padding-inline-start: 20px;
 }
-
-input,
-button {
-  display: block;
-  margin-bottom: 20px;
-}
-video {
-  width: 250px;
-}
