@@ -1,4 +1,4 @@
-import MyApp from './escape-hatches/synchronizing-with-effects/focus-a-field-on-mount.js';
+import MyApp from './escape-hatches/synchronizing-with-effects/fix-an-interval-that-fires-twice.js';
 
 export default function App() {
   return (
