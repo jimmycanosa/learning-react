@@ -1,4 +1,4 @@
-import MyApp from './escape-hatches/synchronizing-with-effects/fix-fetching-inside-an-effect.js';
+import MyApp from './escape-hatches/you-might-not-need-an-effect/transform-data-without-effects.js';
 
 export default function App() {
   return (
