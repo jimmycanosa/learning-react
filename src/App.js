@@ -1,4 +1,4 @@
-import MyApp from './escape-hatches/you-might-not-need-an-effect/transform-data-without-effects.js';
+import MyApp from './escape-hatches/you-might-not-need-an-effect/cache-a-calculation-without-effects.js';
 
 export default function App() {
   return (
