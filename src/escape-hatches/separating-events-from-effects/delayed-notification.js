@@ -12,13 +12,19 @@ function ChatRoom({ roomId, theme }) {
 
   useEffect(() => {
     const connection = createConnection(serverUrl, roomId);
+    let notificationTimeoutId;
     connection.on('connected', () => {
-      setTimeout(() => {
+      notificationTimeoutId = setTimeout(() => {
         onConnected(roomId);
       }, 2000);
     });
     connection.connect();
-    return () => connection.disconnect();
+    return () => {
+      connection.disconnect();
+      if (notificationTimeoutId !== undefined) {
+        clearTimeout(notificationTimeoutId);
+      }
+    };
   }, [roomId]);
 
   return <h1>Welcome to the {roomId} room!</h1>;
