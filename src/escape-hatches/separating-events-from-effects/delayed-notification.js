@@ -6,15 +6,15 @@ import { showNotification } from './notifications.js';
 const serverUrl = 'https://localhost:1234';
 
 function ChatRoom({ roomId, theme }) {
-  const onConnected = useEffectEvent(() => {
-    showNotification('Welcome to ' + roomId, theme);
+  const onConnected = useEffectEvent((connectedRoomId) => {
+    showNotification('Welcome to ' + connectedRoomId, theme);
   });
 
   useEffect(() => {
     const connection = createConnection(serverUrl, roomId);
     connection.on('connected', () => {
       setTimeout(() => {
-        onConnected();
+        onConnected(roomId);
       }, 2000);
     });
     connection.connect();
