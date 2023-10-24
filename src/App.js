@@ -1,4 +1,4 @@
-import MyApp from './escape-hatches/lifecycle-of-reactive-effects/how-react-verifies-that-your-effect-can-re-synchronize.js';
+import MyApp from './escape-hatches/lifecycle-of-reactive-effects/fix-reconnecting-on-every-keystroke.js';
 
 export default function App() {
   return (
