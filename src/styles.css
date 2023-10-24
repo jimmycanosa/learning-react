@@ -46,6 +46,7 @@ ul {
   padding-inline-start: 20px;
 }
 
-body {
-  height: 200px;
+label {
+  display: block;
+  margin-bottom: 10px;
 }
