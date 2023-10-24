@@ -1,4 +1,4 @@
-import MyApp from './escape-hatches/separating-events-from-effects/non-adjustable-delay.js';
+import MyApp from './escape-hatches/separating-events-from-effects/delayed-notification.js';
 
 export default function App() {
   return (
