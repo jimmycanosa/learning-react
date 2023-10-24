@@ -1,4 +1,4 @@
-import MyApp from './escape-hatches/lifecycle-of-reactive-effects/switch-synchronization-on-and-off.js';
+import MyApp from './escape-hatches/lifecycle-of-reactive-effects/investigate-a-stale-value-bug.js';
 
 export default function App() {
   return (
