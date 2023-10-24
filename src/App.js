@@ -1,4 +1,4 @@
-import MyApp from './escape-hatches/lifecycle-of-reactive-effects/populate-a-chain-of-select-boxes.js';
+import MyApp from './escape-hatches/separating-events-from-effects/variable-that-doesnt-update.js';
 
 export default function App() {
   return (
