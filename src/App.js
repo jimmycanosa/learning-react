@@ -1,4 +1,4 @@
-import MyApp from './escape-hatches/you-might-not-need-an-effect/submit-a-form-without-effects.js';
+import MyApp from './escape-hatches/lifecycle-of-reactive-effects/how-react-verifies-that-your-effect-can-re-synchronize.js';
 
 export default function App() {
   return (
