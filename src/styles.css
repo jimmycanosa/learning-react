@@ -45,13 +45,3 @@ code {
 ul {
   padding-inline-start: 20px;
 }
-
-label,
-button {
-  display: block;
-  margin-bottom: 5px;
-}
-.dark {
-  background: #222;
-  color: #eee;
-}
