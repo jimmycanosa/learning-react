@@ -45,3 +45,10 @@ code {
 ul {
   padding-inline-start: 20px;
 }
+
+label {
+  display: block;
+}
+input {
+  margin-left: 10px;
+}
