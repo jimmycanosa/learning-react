@@ -1,4 +1,4 @@
-import MyApp from './escape-hatches/removing-effect-dependencies/resetting_interval.js';
+import MyApp from './escape-hatches/removing-effect-dependencies/retriggering-animation.js';
 
 export default function App() {
   return (
