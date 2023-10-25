@@ -1,4 +1,4 @@
-import MyApp from './escape-hatches/reusing-logic-with-custom-hooks/passing-reactive-values-between-hooks.js';
+import MyApp from './escape-hatches/reusing-logic-with-custom-hooks/extract-a-usecounter-hook.js';
 
 export default function App() {
   return (
