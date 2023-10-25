@@ -1,4 +1,4 @@
-import MyApp from './escape-hatches/reusing-logic-with-custom-hooks/extract-a-usecounter-hook.js';
+import MyApp from './escape-hatches/reusing-logic-with-custom-hooks/make-the-counter-delay-configurable.js';
 
 export default function App() {
   return (
