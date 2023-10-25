@@ -5,13 +5,17 @@ import { FadeInAnimation } from './animation.js';
 function Welcome({ duration }) {
   const ref = useRef(null);
 
+  const onAppear = useEffectEvent((animation) => {
+    animation.start(duration);
+  });
+
   useEffect(() => {
     const animation = new FadeInAnimation(ref.current);
-    animation.start(duration);
+    onAppear(animation);
     return () => {
       animation.stop();
     };
-  }, [duration]);
+  }, []);
 
   return (
     <h1
