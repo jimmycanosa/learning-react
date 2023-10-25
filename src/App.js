@@ -1,4 +1,4 @@
-import MyApp from './escape-hatches/reusing-logic-with-custom-hooks/share-statefull-logic-not-state-itself.js';
+import MyApp from './escape-hatches/reusing-logic-with-custom-hooks/passing-reactive-values-between-hooks.js';
 
 export default function App() {
   return (
