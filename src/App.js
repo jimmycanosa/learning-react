@@ -1,4 +1,4 @@
-import MyApp from './escape-hatches/separating-events-from-effects/delayed-notification.js';
+import MyApp from './escape-hatches/removing-effect-dependencies/resetting_interval.js';
 
 export default function App() {
   return (
