@@ -49,9 +49,9 @@ ul {
 label,
 button {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
-html,
-body {
-  min-height: 300px;
+.dark {
+  background: #222;
+  color: #eee;
 }
